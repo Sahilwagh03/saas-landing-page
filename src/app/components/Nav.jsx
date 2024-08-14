@@ -26,10 +26,10 @@ const Nav = () => {
 						<a href="#about-us">About Us</a>
 					</li>
 				</ul>
-				<div className="flex items-center font-medium max-lg:hidden leading-7">
-					<a href="#login" className="pr-2 text-[#A6A6A6]">
+				<div className="flex items-center gap-4 font-medium max-lg:hidden leading-7">
+					<Button className="rounded-lg text-[#A6A6A6]">
 						Login
-					</a>
+					</Button>
 					<Button className="rounded-lg text-[#F8F8FA] bg-custom-green">
 						Sign Up
 					</Button>

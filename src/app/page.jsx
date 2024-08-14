@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Comapany from "./sections/Comapany";
 import Hero from "./sections/Hero";
+import ReviewSection from "./sections/ReviewSection";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 					<Hero />
 				</section>
 				<Comapany/>
+				<ReviewSection/>
 			</main>
 		</>
 	);
