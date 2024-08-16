@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import Benifit from "./sections/Benifit";
 import Comapany from "./sections/Comapany";
 import Features from "./sections/Features";
 import Hero from "./sections/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
 				<Comapany/>
 				<ReviewSection/>
 				<Features/>
+				<Benifit/>
 			</main>
 		</>
 	);
