@@ -23,7 +23,7 @@ const Benifit = () => {
   ]
 
   return (
-    <section className='py-5 md:py-32 px-32 max-md:px-8'>
+    <section className='py-5 md:py-32 md:pb-10 px-32 max-md:px-8'>
       <div className='flex flex-row'>
         <div className='flex flex-col gap-12 flex-1'>
           <SectionHeader className='max-w-[550px] text-6xl'>What Benifit Will You Get</SectionHeader>
