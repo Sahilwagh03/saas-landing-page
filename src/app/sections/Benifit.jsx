@@ -24,9 +24,9 @@ const Benifit = () => {
 
   return (
     <section className='py-5 md:py-32 md:pb-10 px-32 max-md:px-8'>
-      <div className='flex flex-row'>
-        <div className='flex flex-col gap-12 flex-1'>
-          <SectionHeader className='max-w-[550px] text-6xl'>What Benifit Will You Get</SectionHeader>
+      <div className='flex  flex-col gap-10 md:gap-0 md:flex-row'>
+        <div className='flex flex-col gap-6 md:gap-12 flex-1'>
+          <SectionHeader className='max-w-[550px] text-4xl md:text-6xl'>What Benifit Will You Get</SectionHeader>
           <div className='flex flex-col gap-8'>
             {
               Benifites.map(({ description }, idx) => (
@@ -40,10 +40,10 @@ const Benifit = () => {
         </div>
         <div className='flex-1 flex justify-end relative'>
           <Image src='/assets/images/Benifits_img.png' width={450} height={530}/>
-          <Image src='/assets/images/Money.svg' width={100} height={100} className='absolute w-fit h-fit bottom-3 -left-10'/>
-          <Image src='/assets/images/gallery_icon.svg' width={100} height={100} className='absolute w-fit h-fit top-64 left-0'/>
-          <Image src='/assets/images/Hero_flotting_img_5.svg' width={100} height={100} className='absolute w-fit h-fit top-5 -left-5'/>
-          <Image src='/assets/images/Hero_flotting_img_1.svg' width={100} height={100} className='absolute w-fit h-fit top-44 -right-20'/>
+          <Image src='/assets/images/Money.svg' width={100} height={100} className='absolute w-fit hidden md:block h-fit bottom-3 -left-10'/>
+          <Image src='/assets/images/gallery_icon.svg' width={100} height={100} className='absolute w-fit hidden md:block h-fit top-32 -left-8 md:top-64 md:left-0'/>
+          <Image src='/assets/images/Hero_flotting_img_5.svg' width={100} height={100} className='absolute w-fit hidden md:block h-fit top-5 -left-5'/>
+          <Image src='/assets/images/Hero_flotting_img_1.svg' width={100} height={100} className='absolute hidden md:block w-fit h-fit top-44 -right-20'/>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-        <footer className="bg-[#0E141A] py-5 md:py-16 px-32 max-md:px-8">
-            <div className="max-w-7xl mx-auto flex flex-row justify-between items-center text-white">
+        <footer className="bg-[#0E141A] py-5 md:py-16 px-32 px-8">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-5 md:items-center md:gap-0 text-white">
                 {/* Logo and Signup */}
                 <div className="">
                     <h1 className="text-2xl font-semibold text-custom-green">Biccas</h1>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
 
                 {/* Support */}
-                <div className="flex flex-row gap-10">
+                <div className="flex flex-col md:flex-row gap-10">
                     <div>
                         <h2 className="text-lg font-semibold">Support</h2>
                         <ul className="mt-4 space-y-2 text-[#A6A6A6]">
@@ -69,7 +69,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="mt-8 justify-between flex flex-row items-center  pt-4 text-center text-[#A6A6A6] text-sm">
+            <div className="mt-8 justify-between flex flex-col text-nowrap md:text-wrap gap-4 md:gap-0 md:flex-row items-center  pt-4 text-center text-[#A6A6A6] text-sm">
                 <p>© 2022 Biccas Inc. Copyright and rights reserved</p>
                 <p>
                     <a href="#" className="hover:underline">

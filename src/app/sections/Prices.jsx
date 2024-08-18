@@ -49,16 +49,16 @@ const pricingPlans = [
 
 const Prices = () => {
     return (
-        <section className='py-5 md:py-16 px-32 max-md:px-8 flex flex-col gap-10'>
-            <div className='flex flex-col gap-10 justify-center items-center'>
-                <SectionHeader className='text-center max-w-[430px]'>Choose Plan That&apos;s Right For You</SectionHeader>
+        <section className='py-5 md:py-16 md:px-32 px-2 flex flex-col gap-10'>
+            <div className='flex flex-col gap-4 md:gap-10 justify-center items-center'>
+                <SectionHeader className='text-center text-4xl max-w-[430px]'>Choose Plan That&apos;s Right For You</SectionHeader>
                 <SectionDescription className='text-center'>Choose plan that works best for you, feel free to contact us</SectionDescription>
                 <div className='flex flex-row gap-5'>
                     <Button className='rounded-md border'>Bill Monthly</Button>
                     <Button className='rounded-md border bg-custom-green text-white'>Bill Yearly</Button>
                 </div>
             </div>
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-col md:flex-row gap-4'>
                 {pricingPlans.map((plan, idx) => (
                     <PriceCard key={idx} {...plan} />
                 ))}

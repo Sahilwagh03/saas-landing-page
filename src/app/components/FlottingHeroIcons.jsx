@@ -43,7 +43,7 @@ const FlottingHeroIcons = () => {
                 />
             </div>
 
-            <div className='absolute -right-14 bottom-5 lg:-right-28'>
+            <div className='absolute hidden md:block -right-14 bottom-5 lg:-right-28'>
                 <Image
                     src='/assets/images/Hero_flotting_img_4.svg'
                     alt='credit card'

@@ -19,8 +19,8 @@ const ReviewSection = () => {
 
   return (
     <section className='py-8 pt-4 px-32 max-md:px-8'>
-      <div className='grid grid-cols-2 items-center gap-8'>
-        <div className='flex flex-col gap-8'>
+      <div className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-8'>
+        <div className='flex flex-col gap-8 w-full'>
           <div>
             <SectionHeader className='max-w-[450px]'>
               How we support our partners all over the world
@@ -31,7 +31,7 @@ const ReviewSection = () => {
               DBMS software, management software.
             </SectionDescription>
           </div>
-          <div className='flex flex-row gap-4'>
+          <div className='flex flex-col md:flex-row gap-4'>
             {reviews.map((review, index) => (
               <Card key={index} className='!shadow-none'>
                 <CardBody className='!mb-0 flex flex-col gap-2'>

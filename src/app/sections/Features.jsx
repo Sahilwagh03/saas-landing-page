@@ -24,7 +24,7 @@ const Features = () => {
 
   return (
     <section className="py-8 pt-32 px-32 max-md:px-8">
-      <div className='flex flex-row items-center justify-between'>
+      <div className='flex flex-col gap-4 items-start md:gap-0 md:flex-row md:items-center justify-between'>
         <SectionHeader className='max-w-[300px]'>
           Our Features You Can Get
         </SectionHeader>
@@ -35,7 +35,7 @@ const Features = () => {
           Get Started
         </Button>
       </div>
-      <div className='flex flex-row gap-4 pt-5'>
+      <div className='flex flex-col md:flex-row gap-4 pt-5'>
         {FeaturesList.map(({ featuresName, description, image }, idx) => (
           <HorizontalFeatureCard
             key={idx + featuresName}
